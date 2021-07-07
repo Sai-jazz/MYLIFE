@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/LinearLayout"
+    style="@style/Namestyle"
+    android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/layout_margin"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:layout_width="wrap_content">
 
 
     <TextView
@@ -13,6 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/what_is_my_nickname1"
+        android:inputType="textPersonName"
         android:textAlignment="center" />
 
     <ImageView
